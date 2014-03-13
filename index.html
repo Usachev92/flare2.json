@@ -169,7 +169,8 @@ function update(source) {
       .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
  
   nodeUpdate.select("text")
-      .style("fill-opacity", 1);
+      .style("fill-opacity", 1)
+      .each(wordWrap);
  
   // Transition exiting nodes to the parent's new position.
   var nodeExit = node.exit().transition()
@@ -181,7 +182,8 @@ function update(source) {
       .attr("r", 1e-6);
  
   nodeExit.select("text")
-      .style("fill-opacity", 1e-6);
+      .style("fill-opacity", 1e-6)
+      .each(wordWrap);
  
   // Update the links…
   var link = svg.selectAll("path.link")
