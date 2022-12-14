@@ -2,7 +2,7 @@
  "name": "flare",
  "children": [
   {
-   "name": "analytics",
+   "name": "Анализ",
    "children": [
     {
      "name": "cluster",
@@ -24,7 +24,7 @@
      ]
     },
     {
-     "name": "optimization",
+     "name": "Оптимизация",
      "children": [
       {"name": "AspectRatioBanker", "size": 7074}
      ]
@@ -241,7 +241,7 @@
    ]
   },
   {
-   "name": "vis",
+   "name": "Смотри сюда",
    "children": [
     {
      "name": "axis",
